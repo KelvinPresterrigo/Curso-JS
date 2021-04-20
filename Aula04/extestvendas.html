@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Operadores</title>
+    <style>
+        body{
+            background-color: black;    
+            color: red;   
+            font: red;
+        }   
+    </style>
+</head>
+<body>
+  <h1>Vendas</h1> 
+  <p>  </p> 
+  <script>
+        window.alert( 'Ola vendedor !' )
+        let nome = window.prompt ('Qual seu nome ?')
+        document.writeln (nome)
+        let valor = Number (window.prompt('Quanto você vendeu ?')) //Conversão de $$
+        document.writeln (valor)
+        let atendimentos = Number (window.prompt ('Quantas vendas você fez')) 
+        document.writeln = (atendimentos)   
+        let peças = Number (window.prompt ('Quantas peças você vendeu ? '))
+        document.writeln (peças)
+        let pa = Number (peças / atendimentos) // Peça por Atendimento
+        document.writeln(pa)
+        let vm = Number (valor / atendimentos) //Venda Media
+        document.writeln (vm)
+        let pm = Number (valor / peças) // Peça media    
+        document.writeln (pm)
+  </script>
+</body>
+</html>

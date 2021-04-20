@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de DOM</title>
+    <style>
+        body {
+            background-color: rgb(15, 15, 88);
+            color: rgb(243, 138, 156);
+            font: normal 20pt Arial
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Inicio dos estudos em DOM </h1>
+    <p> Aqui vai o resultado </p>
+    <p> Aprendendo a usar <strong> DOM </strong> em javascript </p>
+    <div> Clique em min </div>
+    <script>
+       let eD= window.document.getElementsByName('P')[0]
+       window.document.write(eD.innerHTML)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <Style>
+        body {
+            font: normal 18pt Arial;
+            background-color: black;
+            color:rgb(255, 255, 255)
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+            background-color:rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        div#res{
+            margin-top: 30px;
+            font: normal 20pt Arial;
+            background: blue;
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div#pm{
+            margin-top: 30px;
+            font: normal 20pt Arial;
+            background: blue;
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div#pa{
+            margin-top: 30px;
+            font: normal 20pt Arial;
+            background: blue;
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+    </Style>
+</head>
+<body>
+    <h1> Calculadora de atendimentos </h1>
+    Valor <input type= "number" name= "valor" id="valor">
+    <br /> 
+    Atendimentos <input type= "number" name= "Atendimentos" id="atendimentos">
+    <br />  
+    Peças <input type= "number" name= "Peças" id="pecas">
+    <br />   
+    <input type= "button" value= "somar" onclick="somar()">
+    <div id= "mediaAtendimentos"> Media de Atendimentos </div>
+    <div id= "pm">  Preços medios </div>
+    <div id= "pa"> Peças por Atendimentos </div>
+    <script>
+        function somar(){
+            var valor = Number(window.document.getElementById('valor').value)
+            var atendimentos = Number(window.document.getElementById('atendimentos').value)
+            var pecas = Number(window.document.getElementById('pecas').value)
+            var mediaAtendimentos = window.document.getElementById('mediaAtendimentos')
+
+            var s = n1 / n2 // Peças media
+            var w = n1 / n3 // Atendimentos medios
+            var pea = n3 / n2 // Peça por Atendimentos
+            res.innerHTML = s
+            pm.innerHTML = w
+            pa.innerHTML = pea
+        }
+    </script>
+    
+</body>
+</html> 
